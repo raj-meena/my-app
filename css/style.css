@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+:root {
+    --purple-blue: #3a3165;
+    --dark-blue: #050931;
+    --dark-blue2: #131848;
+    --dark-blue3: #373b61;
+    --dark-blue4: #344763;
+    --green: #55bc7e;
+    --light-green: #d3e8e1;
+    --light-gray: #636972;
+    --white: #ffffff;
+    --bluish-cyan: #ecf1f4;
+    --light-color: #8f91a1;
+    --light-color1: #eaebf5;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--light-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 20px 0;
+}
+
+p {
+    margin: 0 0 25px 0;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    color: var(--dark-blue);
+    font-weight: 600;
+}
+
+h2 {
+    color: var(--dark-blue2);
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+h3 {
+    color: var(--dark-blue2);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.page-header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    background: var(--bluish-cyan);
+}
+
+.page-header.is-sticky {
+    position: fixed;
+    box-shadow: 0px 10px 25px rgba(70, 85, 103, 0.05);
+    backdrop-filter: blur(10px);
+    animation: slideDown 0.35s ease-out;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar {
+    padding: 16px 0;
+    width: 100%;
+}
+
+.navbar.fixedHeader {
+    position: fixed;
+    background-color: var(--white);
+}
+
+.navbar-light .navbar-brand {
+    color: var(--purple-blue);
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.navbar-light .navbar-brand span {
+    color: var(--green);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--light-gray);
+    font-size: 14px;
+    padding: 10px 28px;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--green);
+}
+
+.navbar-light .navbar-nav .nav-item .get-it-now {
+    font-weight: 500;
+    background-color: var(--green);
+    color: var(--white);
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 10px;
+    display: block;
+    font-size: 15px;
+}
+
+.hero-banner {
+    background-color: var(--bluish-cyan);
+    min-height: 798px;
+}
+
+.hero-banner h6 {
+    color: var(--green);
+    background-color: var(--light-green);
+    display: inline-block;
+    padding: 9px 23px;
+    font-size: 11px;
+    font-weight: 500;
+    border-radius: 10px;
+    margin: 0 0 15px 0;
+}
+
+.form-component {
+    box-shadow: 0px 10px 25px rgba(70, 85, 103, 0.05);
+    border-radius: 4px;
+    margin-top: 30px;
+}
+
+.form-component .form-control::-webkit-input-placeholder {
+    color: #ced3d9;
+}
+
+.form-component .form-control:-ms-input-placeholder {
+    color: #ced3d9;
+}
+
+.form-component .form-control::placeholder {
+    color: #ced3d9;
+}
+
+.form-component .form-control {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: none;
+    height: 52px;
+    padding: 5px 15px;
+    flex: 1;
+    font-size: 13px;
+}
+
+.form-component .btn-success {
+    background: var(--green);
+    color: var(--white);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 131px;
+    border: none;
+}
+
+.services {
+    padding: 80px 0;
+}
+
+.services img {
+    margin: 0 0 25px 0;
+}
+
+.services1 {
+    padding: 80px 0;
+    background-color: var(--bluish-cyan);
+}
+
+a.read-more {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--dark-blue3);
+    text-decoration: none;
+}
+
+a.read-more img {
+    margin-left: 5px;
+}
+
+.news-letter {
+    padding: 80px 0 100px;
+    background: var(--dark-blue4);
+}
+
+.news-letter {
+    color: var(--light-color1);
+}
+
+.news-letter p {
+    font-weight: 300;
+}
+
+.news-letter .form-component {
+    max-width: 540px;
+    margin: 40px auto 0;
+}
+
+.news-letter .form-component .btn-success {
+    width: 170px;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 1000px) {
+    .container {
+        max-width: 1030px;
+    }
+}
+
+@media (max-width: 991px) {
+    .dotted {
+        display: none;
+    }
+    .services1 {
+        padding: 50px 0 15px 0;
+    }
+    .news-letter {
+        padding: 45px 0;
+    }
+    .hero-banner {
+        text-align: center;
+        padding: 110px 0 60px 0;
+    }
+    .services {
+        padding: 55px 0 20px 0;
+    }
+}
